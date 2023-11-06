@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.woff2') format('woff2'),
+    url('../fonts/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Light.woff2') format('woff2'),
+    url('../fonts/Gotham-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Black.woff2') format('woff2'),
+    url('../fonts/Gotham-Black.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  width: 100%;
+}
+p {
+  font-size: 42px;
+  font-style: italic;
+  line-height: 1.2;
+}
+.container {
+    max-width: 1350px;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #623f99;
+}
+a.violet-button {
+  background-color: #623f99;
+  color: #fff;
+  padding: 9px 72px;
+  font-family: 'Gotham';
+  margin-top: 50px;
+  transition-duration: 0.5s;
+  font-size: 32px;
+}
+a.violet-button span {
+  display: inline-block;
+  transform: translateY(1px) translateX(0);
+  transition-duration: 0.5s;
+}
+a.violet-button:hover {
+  border-radius: 8px;
+}
+a.violet-button:hover span {
+  transform: translateY(1px) translateX(3px);
+}
+h2.red-title {
+  font-family: 'Gotham';
+  font-weight: 800;
+  font-size: 76px;
+  color: #d53f71;
+  font-style: italic;
+}
+#main-content {
+  min-height: 100vh;
+  background: url('../images/top-bg.png') no-repeat scroll top center / 100%
+      160px,
+    url('../images/bottom-bg.png') no-repeat scroll bottom center / 100% 160px;
+  padding: 250px 0;
+}
+.step {
+  /* padding: 100px 0; */
+}
+.step-0 {
+  max-width: 870px;
+}
+.step-0 h3 {
+  font-style: italic;
+  font-size: 65px;
+  margin-bottom: -10px;
+  margin-left: 25px;
+}
+.step-0 p {
+  font-size: 35px;
+  margin-top: 40px;
+  font-style: italic;
+}
+.step-0 h2 + p {
+  font-style: italic;
+  font-size: 65px;
+  margin-top: -35px;
+  margin-right: 120px;
+}
+.step-2 h2.red-title,
+.step-1 h2.red-title {
+  margin-bottom: 27px;
+}
+.step-2 p,
+.step-1 p {
+  margin-bottom: 53px;
+}
+.step-1 .bg-images {
+  width: 100%;
+  height: 495px;
+  max-width: 665px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.step-1 .bg-images > a {
+  float: left;
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+.step-1 .bg-images > a.active {
+  outline: 2px dashed #d53f71;
+  outline-offset: 10px;
+  z-index: 999;
+}
+.step-1 .bg-images > a:not(:first-child) {
+  box-shadow: -6px 5px 13px rgb(0 0 0 / 25%);
+}
+.step-1 .bg-images > a img {
+  height: 100%;
+}
+.step-2 .violet-button,
+.step-1 .violet-button {
+  font-size: 32px;
+  padding: 11px 85px;
+  margin-top: 100px;
+  padding-top: 12.5px;
+}
+
+.step-2 {
+  max-width: 1110px;
+}
+.step-2 .form {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.step-2 .form label {
+  font-size: 35px;
+  font-weight: 300;
+  font-family: 'Gotham';
+  font-weight: 300;
+}
+.step-2 .form > div {
+  margin-bottom: 30px;
+}
+.step-2 .form input {
+  width: 549px;
+  height: 64px;
+  border: 1px solid #f7941d;
+  outline: none;
+  padding: 15px;
+  font-size: 26px;
+}
+.step-2 .violet-button {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.card-wrapper .my-card {
+  width: 546px;
+  height: 737px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../images/1.png') no-repeat scroll center center / 100% 100%;
+  position: relative;
+}
+.card-wrapper .my-card:nth-child(2) {
+  background-image: url('../images/2.png');
+}
+.card-wrapper .my-card:nth-child(3) {
+  background-image: url('../images/3.png');
+}
+.card-wrapper .my-card:nth-child(4) {
+  background-image: url('../images/4.png');
+}
+.card-wrapper .my-card p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 265px;
+  font-size: 30px;
+  text-align: center;
+}
+.card-wrapper .my-card.card-two p {
+  transform: translate(-45%, -48%);
+}
+.card-wrapper .my-card.card-three p {
+    top: 53%;
+}
+.card-wrapper .my-card.card-four p {
+    top: 52.5%;
+}
+.card-wrapper .my-card p span {
+  color: #f7931c;
+}
+
+.step-last a.violet-button {
+    min-width: 485px;
+    height: 65px;
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.step-last h2.red-title {
+    font-size: 65px;
+    margin-bottom: 100px;
+}
+/* Responsive */
+@media(max-width: 1199.98px) {
+    .step-last a.violet-button {
+        min-width: 308px;
+        font-size: 22px;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 991.98px) {
+  p {
+    font-size: 30px;
+  }
+  h2.red-title {
+    font-size: 50px;
+  }
+  .step-0 h3 {
+    font-size: 37px;
+    margin-left: 5px;
+  }
+  .step-0 {
+    text-align: center;
+  }
+  .step-0 p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .step-0 h2 + p {
+    font-size: 37px;
+    margin-top: -15px;
+    margin-right: 0;
+  }
+  a.violet-button {
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 11px 25px;
+  }
+  .step-1 h2.red-title {
+    margin-bottom: 15px;
+  }
+  .step-1 p {
+    font-size: 30px;
+  }
+  .step-2 .violet-button,
+  .step-1 .violet-button {
+    font-size: 18px !important;
+    padding: 11px 25px;
+  }
+  .step-2 .form label {
+    font-size: 20px;
+  }
+  .step-2 .form input {
+    width: 350px;
+    height: 55px;
+  }
+  .step-1 .violet-button,
+  .step-2 .violet-button {
+    margin-top: 65px;
+  }
+  .step-last h2.red-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+}
+@media (max-width: 767.98px) {
+  h2.red-title {
+    font-size: 42px;
+    line-height: 1;
+  }
+  .step-0 p {
+    font-size: 20px;
+  }
+  .step-0 h2 + p,
+  .step-0 h3 {
+    font-size: 30px;
+  }
+  .step-0 h2.red-title {
+    margin-top: 5px;
+    margin-bottom: 6px;
+  }
+  .step-2 p,
+  .step-1 p {
+    font-size: 20px;
+  }
+  .step-2 .form label {
+    font-size: 18px;
+  }
+  .step-2 .form input {
+    width: 300px;
+    height: 45px;
+  }
+  .step-last a.violet-button {
+      width: 100%;
+      margin: 5px auto;
+  }
+  .card-wrapper .my-card {
+      width: 100%;
+  }
+  #main-content {
+      padding: 150px 0;
+  }
+}
+@media(max-width:575.98px) {
+    #main-content {
+        padding: 100px 0;
+    }
+}
+@media (max-width: 479.98px) {
+  .step-2 .form > div {
+    flex-direction: column;
+    align-items: flex-start !important;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .step-2 .violet-button {
+    margin-top: 40px;
+  }
+}
+
